@@ -9,12 +9,17 @@ function getComputerChoice(){
     let computerChoice = null;
 
     if (randomNumber>=66){
-        return "Scissors";
+        return "scissors";
     }
     else if(randomNumber >=33){
-        return "Rock";
+        return "rock";
     }
     else{
-        return "Paper";
+        return "paper";
     }
 };
+
+function getHumanChoice(){
+    let humanChoice = prompt("Enter your choice.").trim().toLowerCase();
+    return humanChoice;
+}
